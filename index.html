@@ -1,0 +1,128 @@
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <title>Instagram Feed with bootstrap</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-light bg-light">
+            <div class="container d-flex justify-content-between">
+                <a class="navbar-brand" href="#">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <div class="d-flex">
+                    <button type="button" class="btn btn-success me-3" data-bs-toggle="modal"data-bs-target="#exampleModal">
+                        Create new post
+                    </button>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Create New Post</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                                <div class="modal-body">
+                                    <h5>Caption:</h5>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                    <div class="d-flex mt-2">
+                                        <button type="button" class="btn btn-light btn-outline-secondary me-3"><i class="fa-solid fa-camera"></i></button>
+                                        <button type="button" class="btn btn-light btn-outline-secondary"><i class="fa-solid fa-location-dot"></i></button>
+                                    </div>
+                                </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success">Publish</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="fa-solid fa-gear"></i>
+                          </a>                        
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="#">Profile</a></li>
+                            <li><a class="dropdown-item" href="#">Acessibility</a></li>
+                            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <nav>
+            <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
+              <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true hide-focus-ring"><i class="fa-regular fa-calendar-days"></i></button>
+              <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false" hide-focus-ring><i class="fa-solid fa-square"></i></button>
+            </div>
+          </nav>
+          <div class="tab-content" id="nav-tabContent">
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                <div class="container p-3">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="col-md-3">
+                            <img class="w-100 h-100" src="https://assets.epicurious.com/photos/5988e3458e3ab375fe3c0caf/3:2/w_5409,h_3606,c_limit/How-to-Make-Chicken-Alfredo-Pasta-hero-02082017.jpg">
+                        </div>
+                        <div class="col-md-3">
+                            <img class="w-100 h-100" src="https://www.rd.com/wp-content/uploads/2021/01/GettyImages-588935825.jpg">
+                        </div>
+                        <div class="col-3">
+                            <img class="w-100 h-100" src="https://universe.byu.edu/wp-content/uploads/2019/07/AP19204604544330-1.jpg">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-3">
+                            <img class="w-100 h-100" src="https://hips.hearstapps.com/hmg-prod/images/cute-photos-of-cats-in-grass-1593184777.jpg">
+                        </div>
+                        <div class="col-3">
+                            <img class="w-100 h-100" src="https://www.rd.com/wp-content/uploads/2021/04/GettyImages-145679137-scaled-e1619025176434.jpg">
+                        </div>
+                        <div class="col-3">
+                            <img class="w-100 h-100" src="https://hips.hearstapps.com/hmg-prod/images/cute-cat-photos-1593441022.jpg">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row d-flex align-items-center justify-content-center">
+                        <div class="col-3">
+                            <img class="w-100 h-100" src="https://cdn.britannica.com/57/183257-050-0BA11B4B/Roger-Federer-2012.jpg">
+                        </div>
+                        <div class="col-3">
+                            <img class="w-100 h-100" src="https://images.squarespace-cdn.com/content/v1/5a4551b951a5848559370fa5/1515529774298-AMTP5TEPNG0E4E7TYMUS/IMG_4305.jpg">
+                        </div>
+                        <div class="col-3">
+                            <img class="w-100 h-100" src="https://cdn.britannica.com/23/240123-050-354D5F02/Jalen-Hurts-Super-Bowl-LVII.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                <div class="container d-flex flex-column justify-content-center w-50 border mt-3">
+                    <h5>My dog Sparky!</h5>
+                    <img class="img-fluid object-fit-cover" src="https://www.rd.com/wp-content/uploads/2021/01/GettyImages-588935825.jpg">
+                    <strong>205 Likes</strong>
+                    <br>
+                    This is an example of a very good picture of my dog Sparky!
+                </div>
+                <div class="container d-flex flex-column justify-content-center w-50 border mt-4">
+                    <h5>Ultimate Frisbee</h5>
+                    <img class="img-fluid object-fit-cover" src="https://universe.byu.edu/wp-content/uploads/2019/07/AP19204604544330-1.jpg">
+                    <strong>205 Likes</strong>
+                    <br>
+                    This is me playing ultimate frisbee!
+                </div>
+                <div class="container d-flex flex-column justify-content-center w-50 border mt-4">
+                    <h5>My favorite pasta dish!</h5>
+                    <img class="img-fluid object-fit-cover" src="https://assets.epicurious.com/photos/5988e3458e3ab375fe3c0caf/3:2/w_5409,h_3606,c_limit/How-to-Make-Chicken-Alfredo-Pasta-hero-02082017.jpg">
+                    <strong>205 Likes</strong>
+                    <br>
+                    This is one of my favorite pasta dishes that I make at least once a week.
+                </div>
+            </div>
+          </div>
+    </body>
+</html>
